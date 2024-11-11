@@ -1,9 +1,10 @@
 import {
-  FaFacebookF,
-  FaInstagram,
-  FaTiktok,
-  FaXTwitter,
-} from "react-icons/fa6";
+	FaBoxOpen,
+	FaFacebookF,
+	FaInstagram,
+	FaTiktok,
+	FaXTwitter,
+} from 'react-icons/fa6';
 
 export const navbarLinks = [
   {
@@ -48,4 +49,13 @@ export const socialLinks = [
     href: "https://www.tiktok.com",
     icon: <FaTiktok />,
   },
+];
+
+export const dashboardLinks = [
+	{
+		id: 1,
+		title: 'Productos',
+		href: '/dashboard/productos',
+		icon: <FaBoxOpen size={25} />,
+	},
 ];

@@ -1,11 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-export const Logo = () => {
-    return (
+interface Props {
+	isDashboard?: boolean;
+}
+
+export const Logo = ({ isDashboard }: Props) => {
+	return (
         <Link
             to="/"
-            className="text-2xl font-bold tracking-tighter transition-all"
-        >
+            className={`text-2xl font-bold tracking-tighter transition-all ${
+				isDashboard && 'hover:scale-105'
+			}`}
+		>
             {/* Imagen para pantallas grandes */}
             <img
                 src="/Img/Logo-01.png" // Ruta relativa desde la carpeta public

@@ -7,4 +7,10 @@ export * from './RegisterPage';
 export * from './OrdersUserPage';
 export * from './CheckoutPage';
 export * from './ThankyouPage';
-export * from './OrdersUserPage';
+export * from './OrderUserPage';
+
+
+/* ********************************** */
+/*           DASHBOARD PAGES          */
+/* ********************************** */
+export * from './dashboard/DashboardProductsPage';

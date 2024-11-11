@@ -102,7 +102,7 @@ export const FormCheckout = () => {
 						className='border border-slate-200 rounded-md p-3'
 						{...register('country')}
 					>
-						<option value='Colombia'>Colombia</option>
+						<option value='Ecuador'>Ecuador</option>
 					</select>
 				</div>
 
@@ -122,8 +122,8 @@ export const FormCheckout = () => {
 
 					<div className='bg-stone-100 text-[13px] p-5 space-y-0.5 border border-gray-200 rounded-es-md rounded-ee-md'>
 						<p>Compra a traves de transferencia bancaria</p>
-						<p>BANCOLOMBIA</p>
-						<p>Razón Social: COMPUMATCH</p>
+						<p>BANCO PICHINCHA</p>
+						<p>Razón Social: CelularesBaratos</p>
 						<p>RUC: 123456789000</p>
 						<p>Tipo de cuenta: Corriente</p>
 						<p>Número de cuenta: 1234567890</p>

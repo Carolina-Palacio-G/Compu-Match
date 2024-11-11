@@ -2,21 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   </head>
   
-  <!-- Chat AI-->
   <body>
+    <!-- Root element for React app -->
     <div id="root"></div>
+
+    <!-- Main React script -->
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Voiceflow Chat AI Script -->
     <script type="text/javascript">
       (function(d, t) {
           var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
           v.onload = function() {
             window.voiceflow.chat.load({
-              verify: { projectID: '672be5c3ba4a7b1fa0decb22' },
+              verify: { projectID: '672afa3c3c8f1d73c0a609c4' },
               url: 'https://general-runtime.voiceflow.com',
               versionID: 'production'
             });
@@ -24,6 +28,5 @@
           v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
       })(document, 'script');
     </script>
-    
   </body>
 </html>

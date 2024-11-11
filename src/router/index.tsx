@@ -7,11 +7,14 @@ import {
 	ComputadorPage,
 	LoginPage,
 	RegisterPage,
-	ThankyouPage,
 	OrdersUserPage,
 	CheckoutPage,
+	ThankyouPage,
+	OrderUserPage,
+	DashboardProductsPage,
 } from '../pages';
 import { ClientLayout } from '../layouts/ClientLayout';
+import { DashboardLayout } from '../layouts/DashboardLayout';
 
 export const router = createBrowserRouter([
 	{
@@ -56,7 +59,7 @@ export const router = createBrowserRouter([
 					},
 					{
 						path: 'pedidos/:id',
-						element: <OrdersUserPage />,
+						element: <OrderUserPage />,
 					},
 				],
 			},
@@ -69,5 +72,19 @@ export const router = createBrowserRouter([
 	{
 		path: '/checkout/:id/thank-you',
 		element: <ThankyouPage />,
+	},
+	{
+		path: '/dashboard',
+		element: <DashboardLayout />,
+		children: [
+			{
+				index: true,
+				element: <Navigate to='/dashboard/productos' />,
+			},
+			{
+				path: 'productos',
+				element: <DashboardProductsPage />,
+			},
+		],
 	},
 ]);

@@ -1,14 +1,14 @@
 import { Separator } from '../shared/Separator';
 
 const availableBrands = [
-	'Apple',
-	'ASUS',
-	'DELL',
-	'HP',
-	'Huawei',
-	'Lenovo',
-	'Samsung',
-	'Toshiba',
+  'Apple',
+  'Asus',
+  'Dell',
+  'HP',
+  'Microsoft',
+  'Lenovo',
+  'Samsung',
+  'Toshiba',
 ];
 
 interface Props {

@@ -5,7 +5,7 @@ const brands = [
   },
   {
     image: "public/Img/Brands/Asus.png",
-    alt: "Asus",
+    alt: "ASUS",
   },
   {
     image: "public/Img/Brands/Dell.png",
