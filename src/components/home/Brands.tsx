@@ -16,10 +16,6 @@ const brands = [
     alt: "HP",
   },
   {
-    image: "public/Img/Brands/Huawei.png",
-    alt: "Huawei",
-  },
-  {
     image: "public/Img/Brands/Lenovo.png",
     alt: "Lenovo",
   },

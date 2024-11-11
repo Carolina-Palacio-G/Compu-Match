@@ -1,41 +1,75 @@
 export const AboutPage = () => {
   return (
-    <div className="space-y-5">
-      <h1 className="text-center text-4xl font-semibold tracking-tight mb-5">
-        Nuestra empresa
-      </h1>
-
-      <img
-        src="https://plus.unsplash.com/premium_photo-1682716270464-9a91cbbcf3b7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWRpZmljaW8lMjBkZSUyMGxhJTIwZW1wcmVzYXxlbnwwfHwwfHx8MA%3D%3D"
-        alt="Imagen de fondo"
-        className="h-[500px] w-full object-cover"
-      />
-
-      <div className="flex flex-col gap-4 tracking-tighter leading-7 text-sm font-medium text-slate-800">
-        <p>
-          CompuMatch es una tienda en línea especializada en la venta de
-          computadoras, fundada en 2024. Nuestro objetivo es ofrecer a nuestros
-          clientes la mejor calidad y precio en tecnología, garantizando que
-          encuentren la computadora ideal para sus necesidades personales y
-          académicas.
+    <div className="max-w-5xl mx-auto p-6 space-y-10">
+      {/* Sección del Título */}
+      <div className="text-center space-y-4">
+        <h1 className="text-5xl font-bold tracking-tight text-blue-900">
+          Nuestra Empresa
+        </h1>
+        <p className="text-lg text-gray-600">
+          Conoce más sobre CompuMatch, tu aliado tecnológico.
         </p>
+      </div>
 
-        <p>
-          Contamos con un equipo de expertos dedicados a seleccionar
-          cuidadosamente los mejores productos, asegurando que cada compra sea
-          una inversión inteligente. En CompuMach, te guiamos paso a paso para
-          que encuentres la opción perfecta, adaptada a tu perfil y presupuesto.
-        </p>
+      {/* Sección de Imagen y Descripción */}
+      <div className="flex flex-col md:flex-row gap-8 items-center">
+        {/* Imagen */}
+        <div className="flex-1">
+          <img
+            src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Imagen de fondo"
+            className="h-[400px] w-full object-cover rounded-lg shadow-lg"
+          />
+        </div>
 
-        <h2 className="text-3xl font-semibold tracking-tighh mt-8 mb-4">
-          ¡No esperes más y compra tu computador en CompuMatch!
+        {/* Descripción */}
+        <div className="flex-1 space-y-4 text-gray-800">
+          <p className="text-base leading-7">
+            <strong>CompuMatch</strong> es una tienda en línea especializada en la venta de computadoras, fundada en 2024. 
+            Nuestro objetivo es ofrecer a nuestros clientes la mejor calidad y precio en tecnología, 
+            ayudándolos a encontrar la computadora ideal para sus necesidades personales y académicas.
+          </p>
+
+          <p className="text-base leading-7">
+            Contamos con un equipo de expertos que selecciona cuidadosamente los mejores productos para garantizar 
+            que cada compra sea una inversión inteligente. En <strong>CompuMatch</strong>, te guiamos paso a paso 
+            para que encuentres la opción perfecta adaptada a tu perfil y presupuesto.
+          </p>
+        </div>
+      </div>
+
+      {/* Sección de Llamado a la Acción */}
+      <div className="bg-blue-100 p-8 rounded-lg text-center space-y-4">
+        <h2 className="text-3xl font-semibold text-blue-900">
+          ¡No esperes más y adquiere tu computador en CompuMatch!
         </h2>
+        <p className="text-gray-700">
+          Ofrecemos asesoramiento personalizado para ayudarte a tomar la mejor decisión.
+        </p>
+        <a
+          href="mailto:compumatch01@gmail.com"
+          className="inline-block bg-blue-900 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-800 transition-all duration-200"
+        >
+          Contáctanos
+        </a>
+      </div>
 
+      {/* Sección de Contacto */}
+      <div className="text-center space-y-2">
+        <p className="text-lg font-medium text-gray-800">
+          Para más información, no dudes en ponerte en contacto:
+        </p>
         <p>
-          Para más información, no dudes en ponerte en contacto con nosotros, a
-          través de nuestro correo electrónico: 
-          <a href="mailto:compumatch01@gmail.com">compumatch01@gmail.com</a> o
-          llamado al <a href="tel:3024101216">3024101216</a>
+          <a
+            href="mailto:compumatch01@gmail.com"
+            className="text-blue-900 hover:underline"
+          >
+            compumatch01@gmail.com
+          </a>{" "}
+          |{" "}
+          <a href="tel:3024101216" className="text-blue-900 hover:underline">
+            302 410 1216
+          </a>
         </p>
       </div>
     </div>

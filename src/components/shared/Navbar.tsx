@@ -39,8 +39,8 @@ export const Navbar = () => {
 						to={link.href}
 						className={({ isActive }) =>
 							`${
-								isActive ? 'text-cyan-600 underline' : ''
-							} transition-all duration-300 font-medium hover:text-cyan-600 hover:underline `
+								isActive ? 'text-customBlue underline' : ''
+							} transition-all duration-300 font-medium hover:text-customBlue hover:underline `
 						}
 					>
 						{link.title}
